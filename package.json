@@ -7,6 +7,7 @@
     "dev": "npm-run-all -s generate webpackDev",
     "webpackDev": "webpack-dev-server",
     "build": "npm-run-all -s generate webpackBuild",
+    "start": "npm-run-all -s generate webpackBuild",
     "webpackBuild": "webpack",
     "generate": "babel-node --presets=@babel/preset-react,@babel/preset-env generateHtml",
     "previewDist": "node previewDist",
