@@ -5,7 +5,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom"
 import { CSSTransition } from "react-transition-group"
 import Axios from "axios"
 
-Axios.defaults.baseURL = process.env.BACKENDURL || ""
+Axios.defaults.baseURL = process.env.BACKENDURL || "https://reactbackend.azurewebsites.net"
 
 //Components
 import LoadingDotsIcon from "./components/LoadingDotsIcon"
