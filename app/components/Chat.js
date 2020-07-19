@@ -50,7 +50,7 @@ function Chat() {
   function handleSubmit(e) {
     e.preventDefault()
     //Send Message to Chat Server
-    socket.cuurent.emit("chatFromBrowser", { message: state.fieldValue, token: appState.user.token })
+    socket.curent.emit("chatFromBrowser", { message: state.fieldValue, token: appState.user.token })
     setState((draft) => {
       //Add Message to state collection of messages
       draft.chatMessages.push({ message: draft.fieldValue, username: appState.user.username, avatar: appState.user.avatar })
