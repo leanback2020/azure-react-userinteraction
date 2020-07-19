@@ -17,6 +17,7 @@ import Terms from "./components/Terms"
 import Home from "./components/Home"
 const CreatePost = React.lazy(() => import("./components/CreatePost"))
 const ViewSinglePost = React.lazy(() => import("./components/ViewSinglePost"))
+const Chat = React.lazy(() => import("./components/Chat"))
 import FlashMessages from "./components/FlashMessages"
 import StateContext from "./StateContext"
 import DispatchContext from "./DispatchContext"
@@ -24,7 +25,6 @@ import Profile from "./components/Profile"
 import EditPost from "./components/EditPost"
 import NotFound from "./components/NotFound"
 import Search from "./components/Search"
-import Chat from "./components/Chat"
 
 //mongodb+srv://mainUser:Mongo@2020@cluster0-z1att.mongodb.net/ReactCourse?retryWrites=true&w=majority
 function Main() {
@@ -144,7 +144,7 @@ function Main() {
           <CSSTransition timeout={330} in={state.isSearchOpen} classNames="search-overlay" unmountOnExit>
             <Search />
           </CSSTransition>
-          <Chat />
+          <Suspense fallback="">{state.loggedIn && <Chat />}</Suspense>
           <Footer />
         </BrowserRouter>
       </DispatchContext.Provider>
