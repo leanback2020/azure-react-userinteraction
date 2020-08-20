@@ -20,7 +20,7 @@ function Footer() {
       <p className="m-0">
         Copyright &copy; 2020{" "}
         <a href="/" className="text-muted">
-          ComplexApp
+          Leanback AS
         </a>
         . All rights reserved.
       </p>
