@@ -31,7 +31,7 @@ function Chat() {
   }, [state.chatMessages])
 
   useEffect(() => {
-    socket.current = io(process.env.BACKENDURL || "https://reactbackend.azurewebsites.net")
+    socket.current = io(process.env.BACKENDURL || "https://react-leanback-backend.azurewebsites.net")
     socket.current.on("chatFromServer", (message) => {
       setState((draft) => {
         draft.chatMessages.push(message)
