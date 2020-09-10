@@ -1,13 +1,25 @@
 import React from "react"
 import Page from "./Page"
+import { GitHubIcon } from "../components/icons"
 
 function About() {
   return (
     <Page title="About Us">
-      <h2>About Us</h2>
-      <p className="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum labore quisquam vel id dicta fuga! Ducimus, quo. Dolore commodi aliquid error veritatis consequuntur, excepturi cumque fuga eum incidunt doloremque?</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At qui enim rem totam voluptatum. Aut saepe temporibus, facilis ex a iste expedita minima dolorum dicta doloribus libero aliquid, quae maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit beatae eum, est soluta ducimus ratione et impedit sapiente, nihil, atque dignissimos adipisci? Totam atque officia quis voluptates sed veniam?</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates quisquam possimus tenetur, dicta enim rerum quis, quaerat id nobis provident quo dolorum sapiente temporibus facere non repellendus consequatur cupiditate!</p>
+      <div className="text-center mt-5">
+        <h1>About</h1>
+
+        <p>
+          This project was built for practice purposes using <strong>Context API</strong> by React.
+          <br />
+          This app is using websocket for chat feature, and allow users to create post and do search.
+        </p>
+        <p className="lead text-muted">This website is hosted with Azure Static Website</p>
+        <p> It connects to a MongoDB to save user and post information</p>
+
+        <a className="btn btn-primary" href="https://github.com/leanback2020/azure-react-userinteraction">
+          <GitHubIcon width={"18px"} /> <span className="ml-2 mr-4">Visit Repo</span>
+        </a>
+      </div>
     </Page>
   )
 }

@@ -281,7 +281,7 @@ function HomeGuest() {
     watermark.valign = "middle"
 
     return () => {
-      x.dispose()
+      chart.dispose()
     }
   }, [])
 
