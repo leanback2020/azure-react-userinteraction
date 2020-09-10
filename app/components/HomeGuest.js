@@ -195,7 +195,7 @@ function HomeGuest() {
     var ticker = "TSLA"
     //curl "https://www.quandl.com/api/v3/datasets/WIKI/FB.csv?column_index=4&start_date=2014-01-01&end_date=2014-12-31&collapse=monthly&transform=rdiff&api_key=YOURAPIKEY
     // Load data '         "https://www.quandl.com/api/v3/datasets/WIKI/FB/data.csv?api_key=YOURAPIKEY"'
-    chart.dataSource.url = `https://www.quandl.com/api/v3/datasets/WIKI/${ticker}.csv?start_date=2018-01-01&end_date=2020-08-19&api_key=${process.env.REACT_APP_QUANDL_API_TOKEN}`
+    chart.dataSource.url = `https://www.quandl.com/api/v3/datasets/WIKI/${ticker}.csv?start_date=2018-01-01&end_date=2020-08-19&api_key=stsU2-sEPbKSyiR8xWNJ`
     chart.dataSource.parser = new am4core.CSVParser()
     chart.dataSource.parser.options.useColumnNames = true
     chart.dataSource.parser.options.reverse = true
